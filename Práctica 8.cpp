@@ -40,7 +40,7 @@ int main() {
 
 	// Validar si la cola está vacía
 	if (frente == final) {
-		std::cout << "La cola está vacía." << std::endl;
+		std::cout << "La cola esta vacia." << std::endl;
 		return 1;
 	}
 
