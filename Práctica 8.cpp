@@ -44,14 +44,14 @@ int main() {
 		return 1;
 	}
 
-	//Obtener el primer elemento de la cola
+	// Obtener el primer elemento de la cola
 	TipoDato primerElemento = A[(frente + 1) % MaxTamC];
 	std::cout << "El primer elemento de la cola es: " << primerElemento << std::endl;
 
-	//Eliminar un elemento de la cola
+	// Eliminar un elemento de la cola
 	frente = (frente + 1) % MaxTamC;
 
-	//Imprimir elementos de la cola en el orden en qe fueron ingresados
+	// Imprimir elementos de la cola en el orden en que fueron ingresados
 	std::cout << "Elementos de la cola en el orden de ingreso:" << std::endl;
 	for (int i = frente + 1; i <= final; i = (i + 1) % MaxTamC) {
 		std::cout << A[i] << " ";
